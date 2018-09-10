@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context="com.maspamz.sorting.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka Ke 1" />
+
+    <EditText
+        android:id="@+id/ed_input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harus diisi angka"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Angka Ke 2" />
+
+    <EditText
+        android:id="@+id/ed_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harus diisi angka"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_asc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Ascending" />
+
+        <Button
+            android:id="@+id/btn_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Desceding" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Hasilnya adalah : "
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="17dp"
+        android:padding="5dp"
+        android:background="@drawable/border" />
+
+
+
+
+</LinearLayout>
