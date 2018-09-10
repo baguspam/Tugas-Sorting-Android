@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             if(angka1.text.isEmpty()){
                 Toast.makeText(applicationContext, "Data tidak boleh kosong ", Toast.LENGTH_SHORT).show()
             } else {
-                try {
                     var c = a
                     val r = c
                     val intArray = r.split(", ").map(String::toInt).toIntArray()
@@ -31,12 +30,6 @@ class MainActivity : AppCompatActivity() {
                     SortAsc(numbers1)
                     var printMe=Arrays.toString(numbers1)
                     tv_result.text = "Bentuk Sort Dalam ASC =\n"+ printMe.replace("[","").replace("]","")
-
-                }finally {
-                    Toast.makeText(applicationContext, "Data Format Arraynya salah Gan\n" +
-                            " ex: 4, 6, 9, 1, 5", Toast.LENGTH_SHORT).show()
-                }
-
             }
 
         }
